@@ -19,6 +19,7 @@ CODES:
   Bayesian cal-RSOS.py (for PC laptop experiment)
   Bayesian cal VR-RSOS.py (for VR experiment)
   
+Running the codes requires:
 * Python 2.7
 * NumPy (www.scipy.org) 
 * Matplotlib (www.matplotlib.org)
