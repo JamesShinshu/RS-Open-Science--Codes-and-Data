@@ -1,4 +1,4 @@
-# RS-Open-Science--Codes-and-Data
+# RS-Open-Science-Codes-and-Data
 Python codes and experimental data used in the paper "Testing for the existence of kinematic uncanny valleys in two-digit grasping"
 
 1. Generating natural gaussian noise to the minimal jerk trajectory using spm1d.
