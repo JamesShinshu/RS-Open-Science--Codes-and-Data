@@ -1,8 +1,11 @@
 import numpy as np
 from matplotlib import pyplot
 import pymc
+import os
 
-fnameCSV = '_directory_/Jerk preferences data.csv'
+dirSCRIPT = os.path.dirname(__file__)
+
+fnameCSV = os.path.join(dirSCRIPT, 'Jerk preferences data.csv')
 A = np.loadtxt(fnameCSV, delimiter=',', skiprows=1)
 
 def fA(x, a0, a1):
