@@ -4,7 +4,13 @@ import numpy as np
 import choix
 from matplotlib import pyplot
 
-filename = '_directory_/VR Results/'
+
+dirSCRIPT = os.path.dirname(__file__)
+
+
+filename = os.path.join(dirSCRIPT, 'VR Results')
+
+#filename = '_directory_/VR Results/'
 os.chdir(filename)
 direc = filename
 filename = []

@@ -4,9 +4,15 @@ import numpy as np
 import choix
 from matplotlib import pyplot
 
-nameoffile = '_directory_/Good results'                #HACKberry hand test (good data only)
-# nameoffile = '_directory_/Every results'                #HACKberry hand test (Full data)
-# nameoffile = '_directory_/Bad results'                #HACKberry hand test (bad data only)
+
+dirSCRIPT = os.path.dirname(__file__)
+
+
+PCresults = os.path.join(dirSCRIPT, 'PC Results')
+
+nameoffile = os.path.join(PCresults, 'Good results')                #HACKberry hand test (good data only)
+nameoffile = os.path.join(PCresults, 'Every results')               #HACKberry hand test (Full data)
+nameoffile = os.path.join(PCresults, 'Bad results')                #HACKberry hand test (bad data only)
 
 os.chdir(nameoffile)
 direc = nameoffile
@@ -70,20 +76,20 @@ tsize=12
 
 pyplot.plot(Xdata,pi,'o-',color='k')
 
-pyplot.axvline(0.63,linestyle='--',color='gray')
-ax.text(textX,textY,'Human kinematic',color='black',    #### Human kinematics text
-        horizontalalignment='center',rotation=90,
-        backgroundcolor='w',size=tsize)
-        
-pyplot.axvline(2.8,linestyle='--',color='gray')
-ax.text(2.8,textY+0.03,'Robot kinematic',color='black',  #### Robot kinematics text
-        horizontalalignment='center',rotation=90,
-        backgroundcolor='w',size=tsize)
-
-pyplot.axvline(Xdata[0],linestyle='-',color='gray')
-ax.text(Xdata[0]+dx,textY-0.02,'Minimum jerk\ntrajectory',color='black',  #### Minimum jerk text
-        horizontalalignment='center',rotation=90,
-        backgroundcolor='w',size=tsize)
+#pyplot.axvline(0.63,linestyle='--',color='gray')
+#ax.text(textX,textY,'Human kinematic',color='black',    #### Human kinematics text
+#        horizontalalignment='center',rotation=90,
+#        backgroundcolor='w',size=tsize)
+#        
+#pyplot.axvline(2.8,linestyle='--',color='gray')
+#ax.text(2.8,textY+0.03,'Robot kinematic',color='black',  #### Robot kinematics text
+#        horizontalalignment='center',rotation=90,
+#        backgroundcolor='w',size=tsize)
+#
+#pyplot.axvline(Xdata[0],linestyle='-',color='gray')
+#ax.text(Xdata[0]+dx,textY-0.02,'Minimum jerk\ntrajectory',color='black',  #### Minimum jerk text
+#        horizontalalignment='center',rotation=90,
+#        backgroundcolor='w',size=tsize)
 
 pyplot.xlabel('Absolute average jerk (deg/s$^3x10^5$)', size=15)
 pyplot.ylabel('$\mathit{p}$', size=15)
