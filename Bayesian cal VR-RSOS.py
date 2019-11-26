@@ -3,7 +3,7 @@ import glob, os
 import numpy as np
 import choix
 from matplotlib import pyplot
-import pymc
+import pymc3 as pymc
 
 foldername = '_directory_/VR Results/'
 os.chdir(foldername)
