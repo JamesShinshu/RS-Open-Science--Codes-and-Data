@@ -67,7 +67,7 @@ yVR = A[:,5]
 yTest = A[:,6]
 
 #select just one variable for subsequent analysis:
-y = yPCFull
+y = yVR
 
 
 q0 = 0.215
